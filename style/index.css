@@ -4,8 +4,8 @@
   text-decoration: none;
 }
 @font-face {
-  font-family: titulo;
-  src: url(./fonts/GochiHand-Regular.ttf);
+  font-family:titulo;
+  src: url(../fonts/GochiHand-Regular.ttf);
 }
 
 
@@ -13,7 +13,7 @@ header {
   height: auto;
   display: flex;
   width: 100%;
-  background-image: url(./img/img3.jpeg);
+  background-image: url(../img/img3.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -188,7 +188,7 @@ form {
   flex-direction: column;
   align-items: center;
   background-color: #bec0c4;
-  background-image: url(./img/img2.jpeg);
+  background-image: url(../img/img2.jpeg);
 background-size: contain;
 background-repeat: repeat;
 }
