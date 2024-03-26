@@ -10,16 +10,17 @@
       href="./img/imgRegalateEu.jpeg"
       type="image/x-icon"
     />
+    <script src="style/index.js"></script>
   </head>
   <body>
     <header>
       <div class="containerTitulo">
         <h1>Regalate.EU</h1>
       </div>
-     
+
       <div class="centrarLogo">
-      <img class="imgPortada" src="./img/imgRegalateEu.jpeg" alt="" />
-    </div>
+        <img class="imgPortada" src="./img/imgRegalateEu.jpeg" alt="" />
+      </div>
     </header>
 
     <nav>
@@ -28,7 +29,7 @@
           <a href="">Menu</a>
         </li>
         <li>
-          <a href="">Contactanos</a>
+          <a href="#contactanos">Contactanos</a>
         </li>
         <li>
           <a href="">Informacaion</a>
@@ -37,53 +38,68 @@
     </nav>
 
     <aside>
-        <h4 class="texto">
-           <div class="centrarTexto">
-            <h2>Crea Abundancia en tu vida! </h2> <br><br>
+      <div class="containerTexto">
+        <h2>Crea Abundancia en tu vida!</h2>
+
+        <p class="texto">
           CONSIGUE TU REGALO ¡CREA ABUNDANCIA EN TU VIDA! El Regalo del Legado
           (The Gift of Legacy en inglés) es una plataforma altruista,
           descentralizada y solidaria. Su filosofía es aportar a la sociedad una
           "Economía colaborativa" que ayude a todos sus miembros a alcanzar sus
-          metas económicas personales. <br/>
-          <br/>
+          metas económicas personales. <br />
 
           ¿Te encuentras en la desilusión? Pasa el tiempo y no se cumplen tus
-          sueños: ¿Comprarte la casa de tu vida? <br/><br/>
-          ¿El coche de tus sueños? <br/><br/>
-          ¿El viaje que siempre has anhelado hacer con tu familia? <br/><br/>
-          ¿El salario no alcanza para la universidad de tus hijos?<br/><br/>
+          sueños: ¿Comprarte la casa de tu vida? <br />
+          ¿El coche de tus sueños? <br />
+          ¿El viaje que siempre has anhelado hacer con tu familia? <br />
+          ¿El salario no alcanza para la universidad de tus hijos? <br />
 
           Quiero decirte que hoy es posible: ha llegado la Estrategia 4x4 que te
           permite participar desde cualquier lugar del mundo. Consiste en dar
           una sola vez y con amor un regalo de US $25, "CON DERECHO A RECIBIR 24
-          REGALOS” por el valor del tuyo, es decir US $600. <br/>
-          <br/>
+          REGALOS” por el valor del tuyo, es decir US $600.
+          <br />
 
           Recomienda a 4 amigos esta oportunidad, bajo los lineamientos de la
           estrategia y colaborando para aumentar la comunidad, podrás optar por
-          beneficios hasta de US $149,000.00 en poco tiempo. <br/><br/>
+          beneficios hasta de US $149,000.00 en poco tiempo. <br />
 
           ¡Anímate! Elige una de las opciones abajo para participar en una
           lección gratuita interactiva, inscribirte directamente para uno de los
           cupos disponibles limitados en los tableros o para recibir consulta
           con uno de nuestros voluntarios.
-        </h4>
+        <p/>
       </div>
-        <div class="galeriaImg">
-          <div>
-            <img class="imgAside" src="./img/imgRegalos1.jpeg" alt="imgAside" />
-          </div>
-          <div>
-            <img class="imgAside" src="./img/img2.jpeg" alt="imgAside" />
-          </div>
-          <div>
-            <img class="imgAside" src="./img/img3.jpeg" alt="imgAside" />
-          </div>
-          <div>
-            <img class="imgAside" src="./img/img4.jpeg" alt="imgAside" />
-          </div>
+      <div class="galeriaImg">
+        <div>
+          <img
+            class="imgAside"
+            src="./img/imgNoDisponible.jpg"
+            alt="imgAside"
+          />
         </div>
-      
+        <div>
+          <img
+            class="imgAside"
+            src="./img/imgNoDisponible.jpg"
+            alt="imgAside"
+          />
+        </div>
+        <div>
+          <img
+            class="imgAside"
+            src="./img/imgNoDisponible.jpg"
+            alt="imgAside"
+          />
+        </div>
+        <div>
+          <img
+            class="imgAside"
+            src="./img/imgNoDisponible.jpg"
+            alt="imgAside"
+          />
+        </div>
+      </div>
     </aside>
 
     <div class="contenedorVideo">
@@ -91,44 +107,34 @@
       <video class="videoAside" src="./videos/video1.mp4" controls></video>
     </div>
 
-      <form>
-        
-        <div class="contenedorLabel">
+    <form>
+      <div class="contenedorLabel" id="contactanos">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" placeholder="Ingrese Nombre" />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Ingrese Email" />
 
-          <label for="name">Nombre</label>
-          <input type="text" id="name"placeholder="Ingrese Nombre"/>
-     
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Ingrese Email" />
-
-            <button type="button">Ir Al Zoom</button>
-          </div>
-        
-         
-      </form>
-   
+        <button type="button">Ir Al Zoom</button>
+      </div>
+    </form>
 
     <footer>
-
       <div class="Whatsapp">
-
-      <a href="https://wa.me/34691861697">
-      <img class="whatsapp" src="./img/whatsappGradient.png" alt=""></a>
-
-    </div>
-
-    <div class="containerInstagram">
-
-      <a href="https://wa.me/34691861697">
-        <img class="instagram" src="./img/instagramGradient.png" alt="whatsapp"></a>
-        
+        <a href="https://wa.me/34691861697">
+          <img class="whatsapp" src="./img/whatsappGradient.png" alt=""
+        /></a>
       </div>
 
-      <div class="copy">
-        Copyright 2024
+      <div class="containerInstagram">
+        <a href="https://www.instagram.com/regalate.eu/">
+          <img
+            class="instagram"
+            src="./img/instagramGradient.png"
+            alt="whatsapp"
+        /></a>
       </div>
-      
 
+      <div class="copy">Copyright 2024</div>
     </footer>
   </body>
 </html>
