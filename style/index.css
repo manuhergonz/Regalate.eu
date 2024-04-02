@@ -52,13 +52,20 @@ html {
 }
 
 nav {
+  width: 100%;
   display: flex;
   justify-content:end;
 }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 
 nav ul li a {
   display: inline-block;
-  color: #318aac !important;
+  color: #318aac ;
   font-size: 35px;
   font-weight: 500;
   padding: 0.5em 1.2em;
@@ -67,22 +74,13 @@ nav ul li a {
   border-color: #318aac;
   transition: all 1s ease;
   position: relative;
-  margin: 25px 335px;
+  margin: 25px 25px;
   border-radius: 10px;
 }
-nav ul li{
-  display: inline-block;
-}
+
 nav ul li a:hover {
   background: #cc7e3b;
-  color: #fff !important;
-}
-
-nav ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  color: #fff ;
 }
 
 .texto {
@@ -331,12 +329,14 @@ footer {
  outline: solid #cc7e3b;
  box-shadow: 0 0 30px #fdfdfd;
 }
+.imgContacto{
+  width: 40px;
+}
  
 
 /* RESPONSIVE DESING*/
 
 @media  (max-width: 750px){
-
 
 header{
  display: flex;
@@ -349,18 +349,17 @@ header{
  height: 300px;
  background-attachment: local;
 }
+
 .containerTitulo{
   width: 100%;
 }
+
 .imgPortada{
   width:  100px;
   height: auto;
 }
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+
+
 h1{
   font-style: italic;
   font-family: system-ui;
@@ -376,10 +375,11 @@ h1{
   animation: focus-in-contract 8s;
 }
 
-
-nav ul li a {
-  font-size: 10px;
+nav ul li a{
+   font-size: 20px;
 }
+
+
 
 aside {
   display: flex;
