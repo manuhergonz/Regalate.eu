@@ -324,14 +324,13 @@ footer {
 
 /* RESPONSIVE DESING*/
 
-@media  (max-width: 430px){
+@media  (max-width: 550px){
 body{
   width: 430px;
   height: 650px;
 }
 
 header{
-  
  display: flex;
  flex-direction: row;
  align-items:end;
@@ -380,8 +379,6 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-
   width: 100%;
   height: auto;
 }
