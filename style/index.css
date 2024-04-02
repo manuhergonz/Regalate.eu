@@ -324,11 +324,8 @@ footer {
 
 /* RESPONSIVE DESING*/
 
-@media  (max-width: 550px){
-body{
-  width: 430px;
-  height: 650px;
-}
+@media  (max-width: 750px){
+
 
 header{
  display: flex;
@@ -366,7 +363,7 @@ h1{
   animation: focus-in-contract 8s;
 }
 aside{
-display: inline-block;
+
 width: 430px;
 height: 600px;
 }
