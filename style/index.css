@@ -92,7 +92,7 @@ strong{
   font-style: italic;
   height: auto;
   width: 70%;
-  font-size: 25px;
+  font-size: 23px;
   padding: 5px;
   margin-bottom: 30px;
 
@@ -104,27 +104,9 @@ strong{
   align-items: center;
   
 }
-.containerTexto2 {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
- 
-}
 
-.texto2 {
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  line-height: 1.7;
-  font-size: 20px;
-  width: 50%;
-  
-}
 .imgTexto {
-  width: 600px;
+  width: 550px;
   margin-top: 25px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -216,6 +198,12 @@ h1 {
   -webkit-animation: focus-in-contract 10s 1;
   animation: focus-in-contract 8s;
 }
+iframe{
+  width: 800px;
+  height: 450px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
 
 /* EFECTO H1  */
 
@@ -259,8 +247,9 @@ h1 {
 .contenedorVideo {
   display: flex;
   justify-content: center;
+  
   width: 100%;
-  margin: 200px 0 0 20px;
+ margin-top: 50px;
 
 }
 
@@ -271,25 +260,20 @@ h1 {
 
 }
 
-form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .contenedorFormulario {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
 button {
-  font-family: "titulo";
+  font-family: system-ui;
+  font-weight: bold;
   font-size: 20px;
   width: 250px;
   border-radius: 25px;
@@ -344,7 +328,7 @@ footer {
   text-align: center;
   font-size: 22px;
   padding: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
 }
@@ -361,16 +345,33 @@ footer {
 
 @media  (max-width: 800px){
 
+  body, html{
+     width: 100% !important;
+     overflow-x: hidden  !important;
+  }
 header{
+  margin: 0px;
+  padding: 0px;
  display: flex;
  flex-direction: row;
  align-items: end;
  background-image: url(../img/imgHeader3.webp);
  background-size: cover;
  background-position: center;
- width: 100%;
+
+ width: 100vw;
  height: 300px;
  background-attachment: local;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+iframe{
+  width: 500px;
+  height: 350px;
+  margin-bottom: 200px;
 }
 
 .containerTitulo{
@@ -378,13 +379,9 @@ header{
 }
 
 .imgPortada{
-  width:  100px;
+  width:  150px;
   height: auto;
-}
-
-.imgTexto{
-  margin-top: 1px;
-
+  box-sizing: border-box;
 }
 
 h1{
@@ -392,7 +389,7 @@ h1{
   font-family: system-ui;
   margin: 10px;
   padding: 10px;
-  font-size: 50px;
+  font-size: 45px;
   align-self: flex-end;
   background: linear-gradient(to right, #01314d, #cc7e3b);
   color: transparent;
@@ -413,6 +410,7 @@ aside {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+
 }
 h2{
   text-align: center;
@@ -423,14 +421,20 @@ h2{
 }
 .texto{
   width: 80%;
-  font-size: 12px;
+  font-size: 15px;
   margin-left: 10px ;
   padding: 10px;
   box-sizing:border-box ;
 margin-bottom: 1px;
 }
-
-
+.contenedorFormulario{
+  margin-top: 0px;
+}
+.contenedorVideo{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .containerTexto{
   width: 97%;
 }
@@ -440,6 +444,7 @@ margin-bottom: 1px;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  box-sizing: border-box;
 }
   .imgAside{
     margin-top: 20px;
@@ -458,18 +463,11 @@ margin-bottom: 1px;
     transition: 0.3s;
   }
 
-  .videoAside{
-    display: none;
-  }
-
-  .containerTexto2{
-  margin-top: -100px;
-    width: 100%;
-  }
 
   .imgTexto{
-    width: 90%;
+    width: 70%;
     padding: 5px;
+    margin-bottom: 70px;
 
   }
   .texto2{
