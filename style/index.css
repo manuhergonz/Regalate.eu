@@ -83,13 +83,18 @@ nav ul li a:hover {
   color: #fff ;
 }
 
+strong{
+  color: #cc7e3b;
+}
 .texto {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
-  line-height: 1.7;
+  height: auto;
   width: 70%;
-  font-size: 20px;
+  font-size: 25px;
+  padding: 5px;
+  margin-bottom: 30px;
 
 }
 .containerTexto {
@@ -142,7 +147,7 @@ h2 {
 }
 
 .imgAside {
-  border-radius: 200px;
+  border-radius: 10px;
   margin: 35px;
   -webkit-animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -156,11 +161,13 @@ h2 {
   outline-offset: calc(var(--s) / -2);
   cursor: pointer;
   transition: 0.3s;
+  
 
 }
 .imgAside:hover {
   outline: var(--b) solid var(--c);
   outline-offset: var(--g);
+  
 }
 
 /* EFECTOS DE LAS IMAGENES DE ASIDE  */
@@ -271,14 +278,14 @@ form {
 }
 
 .contenedorFormulario {
-  width: 35%;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-
+  margin-top: 20px;
 }
 
 button {
@@ -333,10 +340,26 @@ footer {
   width: 40px;
 }
  
+.parrafo_form{
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.texto_form{
+  margin-left: 50px;
+}
+
+
+
+
 
 /* RESPONSIVE DESING*/
 
-@media  (max-width: 750px){
+@media  (max-width: 800px){
 
 header{
  display: flex;
@@ -359,6 +382,10 @@ header{
   height: auto;
 }
 
+.imgTexto{
+  margin-top: 1px;
+
+}
 
 h1{
   font-style: italic;
@@ -380,7 +407,6 @@ nav ul li a{
 }
 
 
-
 aside {
   display: flex;
   flex-direction: column;
@@ -396,15 +422,15 @@ h2{
   
 }
 .texto{
-  display: flex;
-  width: 100%;
+  width: 80%;
   font-size: 12px;
-  text-align: start;
   margin-left: 10px ;
-  padding: 5px;
+  padding: 10px;
   box-sizing:border-box ;
-  line-height: 1.5;
+margin-bottom: 1px;
 }
+
+
 .containerTexto{
   width: 97%;
 }
@@ -417,10 +443,10 @@ h2{
 }
   .imgAside{
     margin-top: 20px;
-    border-radius: 200px;
+    border-radius: 10px;
     -webkit-animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    --s: 100px; /* the size of the image */
+    --s: 220px; /* the size of the image */
     --b: 10px; /* the border thickness*/
     --g: 15px; /* the gap */
     --c: #cc7e3b; /* the color */
@@ -437,8 +463,7 @@ h2{
   }
 
   .containerTexto2{
-    display: flex;
-   align-items: start;
+  margin-top: -100px;
     width: 100%;
   }
 
