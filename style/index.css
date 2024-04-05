@@ -285,6 +285,7 @@ button {
 button:hover {
   outline: #cc7e3b solid 2px;
   box-shadow: 0 0 30px #cc7e3b;
+  color: #cc7e3b;
 }
 
 footer {
@@ -308,7 +309,9 @@ footer {
 
 .logosPng {
   width: 20px;
+  
 }
+
 
 .item_redes{
   width: 40px;
