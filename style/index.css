@@ -3,10 +3,10 @@
   padding: 0;
   text-decoration: none;
 }
-@font-face {
+/* @font-face {
   font-family: titulo;
-  src: url(../fonts/GochiHand-Regular.ttf) format("truetype");
-}
+  src: url(../fonts/GochiHand-Regular.ttf) ;
+} */
 
 body {
   margin: 0;
@@ -26,6 +26,7 @@ header {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
+
 }
 
 .imgPortada {
@@ -53,31 +54,34 @@ nav {
   width: 100%;
   display: flex;
   justify-content: end;
+
 }
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+ display: flex;
 }
+
 
 nav ul li a {
   display: inline-block;
   color: #318aac;
-  font-size: 35px;
-  font-weight: 500;
-  padding: 0.5em 1.2em;
+  font-size: 25px;
+  padding: 10px;
   background: rgba(0, 0, 0, 0);
-  border: 2px solid;
-  border-color: #318aac;
-  transition: all 1s ease;
-  position: relative;
+  border: 2px solid #1f88a8;
+  transition: all 1.5s ;
   margin: 25px 25px;
   border-radius: 10px;
+  border-bottom: solid #cc7e3b;
 }
 
 nav ul li a:hover {
   background: #cc7e3b;
-  color: #fff;
+  color: #01314d;
+  border-bottom: solid #40b8d6;
+ 
 }
 
 strong {
@@ -193,8 +197,9 @@ h1 {
 iframe {
   width: 800px;
   height: 450px;
-  margin-bottom: 10px;
+  margin-top: 150px;
   border-radius: 10px;
+ 
 }
 
 /* EFECTO H1  */
@@ -204,7 +209,7 @@ iframe {
     letter-spacing: 1em;
     -webkit-filter: blur(12px);
     filter: blur(12px);
-    opacity: 0;
+    opacity: 0; 
   }
   100% {
     -webkit-filter: blur(0px);
@@ -238,15 +243,22 @@ iframe {
 .contenedorVideo {
   display: flex;
   justify-content: center;
-
   width: 100%;
   margin-top: 50px;
+  
+}
+
+.contenedorVideo2{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+ 
 }
 
 .videoAside {
   width: 50%;
-  height: 70vh;
-  margin-bottom: 100px;
+  height: 60vh;
+  margin-top: 150px;
 }
 
 .contenedorFormulario {
@@ -254,9 +266,9 @@ iframe {
   height: auto;
   display: flex;
   justify-content: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   margin-top: 20px;
 }
 
@@ -270,6 +282,7 @@ button {
   padding: 10px;
   background-color: #1f88a8;
   box-shadow: -15px 0px 5px 0px rgba(42, 42, 42, 0.88);
+  transition: all .6s;
 }
 button:hover {
   outline: #cc7e3b solid 2px;
@@ -303,6 +316,7 @@ footer {
 .item_redes {
   width: 40px;
   margin: 15px;
+  transition: all 0.5s;
 }
 
 .item_redes:hover {
@@ -322,14 +336,15 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
 }
-
-.texto_form {
-  margin-left: 50px;
+.item_form{
+  margin-left: 20px;
+  margin-top: 100px;
 }
+
 
 /* RESPONSIVE DESING*/
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   body,
   html {
     width: 100% !important;
@@ -341,11 +356,9 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: end;
-    background-image: url(../img/imgHeader3.webp);
     background-size: cover;
     background-position: center;
-
-    width: 100vw;
+    width: 100%;
     height: 300px;
     background-attachment: local;
   }
@@ -359,6 +372,10 @@ footer {
     height: 350px;
     margin-bottom: 200px;
   }
+  .item_form{
+    margin-top: 3px;
+
+  }
 
   .containerTitulo {
     width: 100%;
@@ -368,6 +385,7 @@ footer {
     width: 150px;
     height: auto;
     box-sizing: border-box;
+  
   }
 
   h1 {
@@ -402,14 +420,7 @@ footer {
     font-family: system-ui;
     font-style: italic;
   }
-  .texto {
-    width: 80%;
-    font-size: 15px;
-    margin-left: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 1px;
-  }
+ 
   .contenedorFormulario {
     margin-top: 0px;
   }
@@ -418,6 +429,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+  /* .contenedorVideo2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  } */
   .containerTexto {
     width: 97%;
   }
@@ -457,5 +473,17 @@ footer {
   }
 }
 
+/* @media (max-width: 1200px) {
+}
+
 @media (max-width: 1200px) {
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
+} */
+
+
+
