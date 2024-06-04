@@ -9,6 +9,7 @@
 } */
 
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #01314d;
@@ -20,68 +21,69 @@ html {
 header {
   display: flex;
   width: 100%;
-  height: 500px;
-  background-image: url(../img/imgHeader.webp);
+  min-height: 600px;
+  background-image: url(../img/imgHeader.jpg);
   background-repeat: no-repeat;
+   background-position: center;
   background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-
+  background-attachment: fixed; 
 }
 
 .imgPortada {
-  width: 300px;
+  max-width: 300px;
   height: 300px;
-  margin: 10px;
   border-radius: 50%;
 }
 
-.centrarLogo {
+.contenedorLogo {
   width: 50%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.containerTitulo {
   display: flex;
   justify-content: center;
+ align-items: center;
+  
+}
+
+.contenedorTitulo {
+  display: flex;
+  justify-content: space-evenly;
   width: 50%;
 }
+
+
 
 nav {
   width: 100%;
   display: flex;
   justify-content: end;
-
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
 }
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
- display: flex;
-}
-
 
 nav ul li a {
   display: inline-block;
   color: #318aac;
   font-size: 25px;
-  padding: 10px;
+  padding: 8px;
   background: rgba(0, 0, 0, 0);
   border: 2px solid #1f88a8;
-  transition: all 1.5s ;
-  margin: 25px 25px;
-  border-radius: 10px;
+  transition: all 1.5s;
+  margin: 25px 100px;
+  border-radius: 15px;
   border-bottom: solid #cc7e3b;
+  list-style: none;
 }
 
 nav ul li a:hover {
   background: #cc7e3b;
   color: #01314d;
   border-bottom: solid #40b8d6;
- 
+  border-radius: 15px;
+}
+
+nav ul {
+  list-style: none;
 }
 
 strong {
@@ -91,25 +93,23 @@ strong {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
-  height: auto;
-  width: 70%;
+  width: 80%;
   font-size: 23px;
   padding: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .containerTexto {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
+  
 }
-
-.imgTexto {
-  width: 550px;
-  margin-top: 25px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  filter: drop-shadow(0 0 10px white);
+.item_texto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
 }
 
 aside {
@@ -119,20 +119,28 @@ aside {
   height: auto;
 }
 h2 {
-  text-align: center;
+  
   font-size: 35px;
-  font-family: system-ui;
+  font-family: sans-serif;
   font-style: italic;
   line-height: 2;
   color: #cc7e3b;
 }
 
+.galeriaImg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+  
+ 
+}
 .imgAside {
   border-radius: 10px;
   margin: 35px;
   -webkit-animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  --s: 350px; /* the size of the image */
+  --s: 340px; /* the size of the image */
   --b: 10px; /* the border thickness*/
   --g: 15px; /* the gap */
   --c: #cc7e3b; /* the color */
@@ -142,6 +150,7 @@ h2 {
   outline-offset: calc(var(--s) / -2);
   cursor: pointer;
   transition: 0.3s;
+
 }
 .imgAside:hover {
   outline: var(--b) solid var(--c);
@@ -183,8 +192,7 @@ h2 {
 h1 {
   font-style: italic;
   font-family: system-ui;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
   font-size: 80px;
   align-self: flex-end;
   background: linear-gradient(to right, #01314d, #cc7e3b);
@@ -193,14 +201,9 @@ h1 {
   -webkit-background-clip: text;
   -webkit-animation: focus-in-contract 10s 1;
   animation: focus-in-contract 8s;
+  text-wrap: balance;
 }
-iframe {
-  width: 800px;
-  height: 450px;
-  margin-top: 150px;
-  border-radius: 10px;
- 
-}
+
 
 /* EFECTO H1  */
 
@@ -209,7 +212,7 @@ iframe {
     letter-spacing: 1em;
     -webkit-filter: blur(12px);
     filter: blur(12px);
-    opacity: 0; 
+    opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
@@ -231,34 +234,37 @@ iframe {
   }
 }
 
-.galeriaImg {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  height: auto;
-  justify-content: center;
-  align-content: center;
-}
+
 
 .contenedorVideo {
+ width: 100%;
+  height: auto;
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 50px;
-  
+  justify-content: center; 
+  margin-bottom: 100px;
+  margin-top: 100px; 
+}
+iframe {
+ min-width: 70%;
+  height: 900px;
+  margin-top: 150px;
+  border-radius: 40px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgb(234, 234, 236);
 }
 
-.contenedorVideo2{
-  display: flex;
-  width: 100%;
-  justify-content: center;
- 
+.contenedorVideo2 {
+ display: flex;
+ justify-content: center;
+ max-width: 100%;
+aspect-ratio: 16/9;
 }
 
 .videoAside {
-  width: 50%;
-  height: 60vh;
-  margin-top: 150px;
+  width: 30%;
+  margin-top: 100px;
+  height: auto;
 }
 
 .contenedorFormulario {
@@ -268,7 +274,7 @@ iframe {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -282,7 +288,7 @@ button {
   padding: 10px;
   background-color: #1f88a8;
   box-shadow: -15px 0px 5px 0px rgba(42, 42, 42, 0.88);
-  transition: all .6s;
+  transition: all 0.6s;
 }
 button:hover {
   outline: #cc7e3b solid 2px;
@@ -295,7 +301,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30vh;
+  min-height: 30vh;
   font-family: sans-serif;
   font-style: italic;
 }
@@ -325,7 +331,7 @@ footer {
   box-shadow: 0 0 30px #fdfdfd;
 }
 .imgContacto {
-  width: 40px;
+  width: 30px;
 }
 
 .parrafo_form {
@@ -336,11 +342,10 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
 }
-.item_form{
+.item_form {
   margin-left: 20px;
   margin-top: 100px;
 }
-
 
 /* RESPONSIVE DESING*/
 
@@ -348,7 +353,7 @@ footer {
   body,
   html {
     width: 100% !important;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
   }
   header {
     margin: 0px;
@@ -359,8 +364,7 @@ footer {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 300px;
-    background-attachment: local;
+    min-height: 300px;
   }
   body {
     margin: 0px;
@@ -368,13 +372,12 @@ footer {
     box-sizing: border-box;
   }
   iframe {
-    width: 500px;
-    height: 350px;
+    width: 100%;
+   height: 300px;
     margin-bottom: 200px;
   }
-  .item_form{
+  .item_form {
     margin-top: 3px;
-
   }
 
   .containerTitulo {
@@ -385,14 +388,13 @@ footer {
     width: 150px;
     height: auto;
     box-sizing: border-box;
-  
+    margin-bottom: 30px;
   }
 
   h1 {
     font-style: italic;
     font-family: system-ui;
-    margin: 10px;
-    padding: 10px;
+    margin-left: 10px;
     font-size: 45px;
     align-self: flex-end;
     background: linear-gradient(to right, #01314d, #cc7e3b);
@@ -403,8 +405,19 @@ footer {
     animation: focus-in-contract 8s;
   }
 
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #01314d79;
+  }
+
   nav ul li a {
     font-size: 20px;
+  
+  }
+  .imgContacto{
+    max-width: 15px;
   }
 
   aside {
@@ -413,6 +426,7 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    ;
   }
   h2 {
     text-align: center;
@@ -420,7 +434,7 @@ footer {
     font-family: system-ui;
     font-style: italic;
   }
- 
+
   .contenedorFormulario {
     margin-top: 0px;
   }
@@ -429,20 +443,20 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-  /* .contenedorVideo2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  } */
+
+  .videoAside {
+    margin: 20px;
+  }
   .containerTexto {
-    width: 97%;
+    width: 100%;
+    align-items:  center;
   }
 
   .galeriaImg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    min-width: 600px;
     box-sizing: border-box;
   }
   .imgAside {
@@ -452,7 +466,7 @@ footer {
       both;
     animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     --s: 220px; /* the size of the image */
-    --b: 10px; /* the border thickness*/
+    --b: 5px; /* the border thickness*/
     --g: 15px; /* the gap */
     --c: #cc7e3b; /* the color */
     width: var(--s);
@@ -471,6 +485,10 @@ footer {
   .texto2 {
     width: 95%;
   }
+
+  .texto {
+    margin-top: 10px;
+  }
 }
 
 /* @media (max-width: 1200px) {
@@ -484,6 +502,3 @@ footer {
 
 @media (max-width: 1200px) {
 } */
-
-
-
