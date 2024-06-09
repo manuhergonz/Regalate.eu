@@ -143,6 +143,7 @@ h2 {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .imgAside:hover {
   outline: var(--b) solid var(--c);
   outline-offset: var(--g);
@@ -254,7 +255,6 @@ iframe {
   height: auto;
 }
 
-
 .form{
   width: 100%;
   height: auto;
@@ -340,12 +340,8 @@ footer {
 
 /* RESPONSIVE DESING*/
 
-@media screen and (max-width: 480px) {
-  body,
-  html {
-    width: 100% !important;
-    /* overflow-x: hidden !important; */
-  }
+@media (max-width: 430px) {
+  
   header {
     margin: 0px;
     padding: 0px;
@@ -368,23 +364,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    flex-direction: row;
     box-sizing: border-box;
+ 
   }
+
   .imgAside {
     border-radius: 10px;
-    -webkit-animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-      both;
-    animation: tilt-in-fwd-tl 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    --s: 150px; /* the size of the image */
-    --b: 5px; /* the border thickness*/
-    --g: 15px; /* the gap */
+    --s: 140px; /* the size of the image */
+    --b: 10px; /* the border thickness*/
+    --g: 5px; /* the gap */
     --c: #cc7e3b; /* the color */
     width: var(--s);
-    aspect-ratio: 1;
-    outline: calc(var(--s) / 2) solid #0009;
-    outline-offset: calc(var(--s) / -2);
-    cursor: pointer;
-    transition: 0.3s;
+  }
+  .item_galeria{
+   display: flex;
+   justify-content: center;
+    
   }
 
   iframe {
@@ -430,7 +426,7 @@ footer {
     max-width: 14px;
   }
 
-  aside {
+  .aside {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -485,9 +481,51 @@ footer {
  
 }
 
-/* @media (max-width: 1200px) {
+ @media (min-width: 431px) and (max-width: 720px) {
+  header{
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .galeriaImg{
+    width: 100%;
+  }
+
+  .imgAside{
+    border-radius: 10px;
+    margin: 10px ;
+    --s: 230px; /* the size of the image */
+    --b: 10px; /* the border thickness*/
+    --g: 5px; /* the gap */
+    --c: #cc7e3b; /* the color */
+    width: var(--s);
+    
+  }
+  .containerTexto{
+    width: 100%;
+   align-items: center;
+  }
+
+  .texto{
+    margin: auto;
+  }
+
+iframe{
+  width: 100%;
+  height: 400px;
 }
 
+
+
+
+}
+
+
+/*
 @media (max-width: 1200px) {
 }
 
